@@ -9,7 +9,7 @@ You need to have a Shelly 1PM installed and configured on your local network. As
 
 ### Device Discovery
 
-You must pass a `TARGETS` environment variable which is a comma-separated list of device IPs. More than one 1PM device can be scraped.
+You must pass a `TARGETS` environment variable which is a comma-separated list of device IPs. More than one device can be scraped.
 
 ###
 
