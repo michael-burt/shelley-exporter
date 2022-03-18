@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+
+  shelly-exporter:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    working_dir: /app
+    volumes:
+      - ./:/app
+    environment:
+      - FLASK_ENV=development
+      - DEBUG=1
+      - TARGETS
+    ports:
+      - "5000:5000"
+    command:
+      - flask
+      - run
+      - --host=0.0.0.0
+      - --port=5000
