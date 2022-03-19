@@ -29,7 +29,6 @@ def get_1pm_data(target):
     labels = dict(
         device_type=device.get("type"),
         device_name=resp_obj.get("name"),
-        device_serial_number=status_resp_obj.get("serial"),
         device_hostname=device.get("hostname"),
         device_mac=device.get("mac"),
         device_ip=wifi_sta.get("ip"),
