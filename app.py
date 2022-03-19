@@ -70,7 +70,7 @@ def get_1pm_data(target):
         avg_power_3m=(
             "gauge",
             "Average real AC power being drawn over last 3 minute window, in Watts",
-            sum(meters.get("counters", [])),
+            sum(meters.get("counters", [])) / 3,
         ),
         total_power=(
             "counter",
